@@ -5,7 +5,7 @@ import { redirect } from "next/navigation"
 
 export default async function AdminPage() {
   const session = await auth()
-  const userRole = (session?.user as any)?.role
+  const userRole = session?.user?.role
 
   // Redirect non-admin users
   if (userRole !== "admin") {

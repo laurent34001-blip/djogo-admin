@@ -29,7 +29,7 @@ export default async function Home() {
               <h3 className="text-sm font-medium text-blue-800">User Information</h3>
               <div className="mt-2 text-sm text-blue-700">
                 <p><strong>Email:</strong> {session?.user?.email}</p>
-                <p><strong>Role:</strong> {(session?.user as any)?.role}</p>
+                <p><strong>Role:</strong> {session?.user?.role}</p>
               </div>
             </div>
 

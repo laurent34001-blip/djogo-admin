@@ -59,7 +59,7 @@ export default async function ProfilePage() {
                     Role
                   </label>
                   <p className="mt-1 text-sm text-gray-900">
-                    {(session?.user as any)?.role}
+                    {session?.user?.role}
                   </p>
                 </div>
               </div>
