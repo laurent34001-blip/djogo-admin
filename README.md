@@ -33,8 +33,14 @@ npm install
 
 2. Set up environment variables:
 ```bash
+# Copy the example file
 cp .env.example .env.local
+
+# Generate a secure secret (optional - a default is provided)
+# npx auth secret
 ```
+
+**Important:** The `.env.local` file contains the `AUTH_SECRET` required by NextAuth. A default secret is provided in the example, but you should generate a new one for production.
 
 3. Run the development server:
 ```bash
